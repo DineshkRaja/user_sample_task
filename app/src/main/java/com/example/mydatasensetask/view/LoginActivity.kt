@@ -74,7 +74,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
         usersList.add(
             UsersLogin(
                 id = 0,
-                userName = "test1",
+                userName = "test",
                 email = "",
                 password = hashPassword("test1234")
             )

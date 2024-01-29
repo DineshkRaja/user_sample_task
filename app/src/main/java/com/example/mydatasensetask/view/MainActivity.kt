@@ -109,6 +109,18 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 education = "Associate Degree"
             )
         )
+
+        dataSenseList.add(
+            Users(
+                Id = 0,
+                userName = "Data",
+                age = 35,
+                dateOfBirth = "25 Sep 1998",
+                gender = "Male",
+                education = "Master\'s Degree"
+            )
+        )
+
         return dataSenseList
     }
 
