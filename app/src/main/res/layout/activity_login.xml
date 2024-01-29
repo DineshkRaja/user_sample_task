@@ -14,18 +14,18 @@
         android:layout_width="230dp"
         android:layout_height="230dp"
         android:layout_marginTop="30dp"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/welcomeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome back"
         android:layout_marginTop="16dp"
+        android:text="Welcome back"
         android:textColor="@color/text_title_color"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -50,19 +50,19 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         app:boxStrokeColor="@color/text_title_color"
-        app:startIconDrawable="@drawable/person"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginText">
+        app:layout_constraintTop_toBottomOf="@+id/loginText"
+        app:startIconDrawable="@drawable/person">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/nameEditText"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username / Email Id"
             android:paddingStart="45dp"
             android:paddingEnd="10dp"
             android:textColor="@color/text_title_color"
-            android:layout_height="wrap_content"
-            android:hint="Username / Email Id"
             android:textSize="16sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -73,22 +73,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        app:passwordToggleEnabled="true"
         app:boxStrokeColor="@color/text_title_color"
-        app:startIconDrawable="@drawable/password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nameParent">
+        app:layout_constraintTop_toBottomOf="@+id/nameParent"
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/password">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/passwordEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
+            android:inputType="textPassword"
             android:paddingStart="45dp"
             android:paddingEnd="10dp"
             android:textColor="@color/text_title_color"
-            android:inputType="textPassword"
             android:textSize="16sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -167,9 +167,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:textStyle="bold"
         android:text="Don't have an account? Sign up"
         android:textColor="@color/text_title_color"
+        android:textStyle="bold"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginButton" />
